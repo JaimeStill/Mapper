@@ -3,6 +3,8 @@
 * [Overview](#overview)
 * [Build](#build)
 * [Infrastructure](#infrastructure)
+    * [Mapper.Scripts](#mapper.scripts)
+    * [Mapper.Web](#mapper.web)
 
 [![choropleth-generator](https://user-images.githubusercontent.com/14102723/68822657-84ece980-065f-11ea-88c7-f8a22eac8e62.gif)](https://user-images.githubusercontent.com/14102723/68822657-84ece980-065f-11ea-88c7-f8a22eac8e62.gif)
 
@@ -35,3 +37,27 @@ yarn global add shapefile d3 d3-geo-projection d3-scale-chromatic ndjson-cli top
 
 ## Infrastructure
 [Back to Top](#choropleth-generator)
+
+The core files necessary for generating maps are located in [Mapper.Web/wwwroot/mapping](https://github.com/JaimeStill/Mapper/tree/master/Mapper.Web/wwwroot/mapping). These files are used by a PowerShell script, executed via the [Microsoft.PowerShell.SDK](https://github.com/PowerShell/PowerShell/tree/master/src/Microsoft.PowerShell.SDK) to generate the GeoJSON necessary to render the map.
+
+### [Mapper.Scripts](https://github.com/JaimeStill/Mapper/tree/master/Mapper.Scripts)
+[Back to Top](#choropleth-generator)
+
+Contains classes, extension methods, and a PowerShell script for generating maps.
+
+**Key Files**  
+
+* [Create-Map.ps1](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Scripts/Scripts/Create-Map.ps1)
+* [ScriptExtensions.cs](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Scripts/Extensions/ScriptExtensions.cs)
+* [MapExtensions.cs](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Scripts/Extensions/MapExtensions.cs)
+
+### [Mapper.Web](https://github.com/JaimeStill/Mapper/tree/master/Mapper.Web)
+
+<span>ASP.NET</span> Core / Angular SPA
+
+**Key Files**  
+
+* [MapController.cs](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Web/Controllers/MapController.cs)
+* [map.service.ts](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Web/ClientApp/src/app/services/map.service.ts)
+* [home.component.ts](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Web/ClientApp/src/app/routes/home/home.component.ts)
+* [home.component.html](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Web/ClientApp/src/app/routes/home/home.component.html)
