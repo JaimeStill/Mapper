@@ -3,8 +3,8 @@
 * [Overview](#overview)
 * [Build](#build)
 * [Infrastructure](#infrastructure)
-    * [Mapper.Scripts](#mapper.scripts)
-    * [Mapper.Web](#mapper.web)
+    * [Mapper.Scripts](#mapperscripts)
+    * [Mapper.Web](#mapperweb)
 
 [![choropleth-generator](https://user-images.githubusercontent.com/14102723/68822657-84ece980-065f-11ea-88c7-f8a22eac8e62.gif)](https://user-images.githubusercontent.com/14102723/68822657-84ece980-065f-11ea-88c7-f8a22eac8e62.gif)
 
