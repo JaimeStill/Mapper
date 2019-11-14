@@ -6,7 +6,7 @@
     * [Mapper.Scripts](#mapperscripts)
     * [Mapper.Web](#mapperweb)
 
-[![choropleth-generator](https://imgur.com/ylb4RME.gif)](https://imgur.com/ylb4RME)
+[![choropleth-generator](https://imgur.com/ylb4RME.gif)](https://imgur.com/ylb4RME.gif)
 
 ## Overview
 [Back to Top](#choropleth-generator)
