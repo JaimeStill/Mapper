@@ -52,6 +52,7 @@ Contains classes, extension methods, and a PowerShell script for generating maps
 * [MapExtensions.cs](https://github.com/JaimeStill/Mapper/blob/master/Mapper.Scripts/Extensions/MapExtensions.cs)
 
 ### [Mapper.Web](https://github.com/JaimeStill/Mapper/tree/master/Mapper.Web)
+[Back to Top](#choropleth-generator)
 
 <span>ASP.NET</span> Core / Angular SPA
 
