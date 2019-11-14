@@ -1,0 +1,22 @@
+ContextDetails
+
+User: 
+Local IP: ::1
+Local Port: 5000
+Remote IP: ::1
+Remote Port: 60974
+Content Type: 
+URL: http://localhost:5000/api/map/testMap
+
+Headers
+Cache-Control : max-age=0
+Connection : keep-alive
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding : gzip, deflate
+Accept-Language : en-US,en;q=0.5
+Host : localhost:5000
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Upgrade-Insecure-Requests : 1
+
+Exception Details
+Could not find a part of the path 'E:\Jaime\Desktop\Work\Projects\Mapper\Mapper.Web\maps\cb_2014_02_tract_500k.zip'.

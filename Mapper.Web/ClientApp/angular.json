@@ -1,0 +1,95 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "web-app": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "progress": true,
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/assets",
+              "src/favicon.ico"
+            ],
+            "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/material-icons/iconfont/material-icons.css",
+              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
+              "src/theme/material-themes.scss"
+            ],
+            "scripts": [
+              "node_modules/d3/dist/d3.js",
+              "node_modules/d3-geo/dist/d3-geo.js",
+              "node_modules/d3-geo-projection/dist/d3-geo-projection.js",
+              "node_modules/d3-scale-chromatic/dist/d3-scale-chromatic.js",
+              "node_modules/hammerjs/hammer.js",
+              "node_modules/shapefile/dist/shapefile.js",
+              "node_modules/topojson-client/dist/topojson-client.js",
+              "node_modules/topojson-server/dist/topojson-server.js",
+              "node_modules/topojson-simplify/dist/topojson-simplify.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "web-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "web-app:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "web-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "web-app"
+}

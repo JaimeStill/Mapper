@@ -1,0 +1,23 @@
+ContextDetails
+
+User: ehowell
+Local IP: ::1
+Local Port: 5000
+Remote IP: ::1
+Remote Port: 61433
+Content Type: 
+URL: http://localhost:5000/api/map/testMap
+
+Headers
+Cache-Control : max-age=0
+Connection : keep-alive
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding : gzip, deflate
+Accept-Language : en-US,en;q=0.5
+Cookie : .AspNetCore.Cookies=CfDJ8MiF0rTD6mRGgXDBYJJOZmKD6DPUD8T-v3LYaomBx-g16O2_wjJYh16Xqiw9uFSuqNtllzFJ2wLk84pDazIwTvm5VvKwHPBOE-Boi0sZbakX6WprDXj5f4IYvo9fNh7INauL2GVdNvORl7urmqgUyI0ovq4gzTx789kB6oLUg-BU6qn3y24SgaAxrHDjivO7eOvm0bVl5yNiunphvlKJkH1rLbTeK9PVRbmXtq-wdTaxWXjgIY-rBLLUdaA681dOXpBfU9K63I4m9x1broQXiHMYbO1Sb5ylJrvkElTTu6ZsXwVvk67dDV6e8_QS-oCnR7I_O7xQ8Vg5iHy6I7_27o0vu8kIp1gksLVhQ54NndstkeQue0TYeZrvd02r8YKUEaQ3iAg1DD9ZJHH8JpRGwUiNZed1UvRl6cYm9dlJ0NErj-fWpoIYvJeV4PUJu5_3-0ad8MOCXFzvXe2vXMbA0VE
+Host : localhost:5000
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Upgrade-Insecure-Requests : 1
+
+Exception Details
+Could not find file 'E:\Jaime\Desktop\Work\Projects\Mapper\Mapper.Web\wwwroot\mapping\data\91f93840-99da-4ef1-8922-5a9168addbb8\alaska.ndjson'.

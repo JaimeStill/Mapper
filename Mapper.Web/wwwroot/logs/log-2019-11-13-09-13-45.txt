@@ -1,0 +1,25 @@
+ContextDetails
+
+User: ehowell
+Local IP: ::1
+Local Port: 5000
+Remote IP: ::1
+Remote Port: 50509
+Content Type: application/json
+URL: http://localhost:5000/api/map/createMap
+
+Headers
+Connection : keep-alive
+Content-Type : application/json
+Accept : application/json, text/plain, */*
+Accept-Encoding : gzip, deflate
+Accept-Language : en-US,en;q=0.5
+Cookie : .AspNetCore.Cookies=CfDJ8MiF0rTD6mRGgXDBYJJOZmLaTZn1czk1zBXyj8r6Xi-r6BqNe99OnDno9VI5hc03GrrtqgW8Xxk3wvL87M1407tQIY3xwjwp3GPQ_MCucFSldqOkfFuW854XMf2GJW3TMuacQ8EltxYXNvsfSpi1n_rVyDnF6W1fqe-sgd3Xu6iZOYhG6l17dpwjmH4NwQracXKHRW0LROlY-2DkLNDKaJLrfhsrqkeXBPCD3hisJUhZk56QWrmfysPRtHXXqEqnrA8H2EU3_0LSbwG-W9ncDQxIA3G6FAfJ-CXculqPx4slSHQFqKFM4cqxbKoNCQDGd5Myc61u8HVFCxbaJI2UuUGFTYepFcjvUZltlVsM1hg96TX8V_X0ybR44gq7Yqp0rgcP1bexkKKLIr13M1cL6a2etbNqZ8Zl-oAex1zWtqtVMAhJw7L20TDay2S6LLTuEf7hA9_ijQ7nre60Ejblq3g
+Host : localhost:5000
+Referer : http://localhost:5000/home
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Origin : http://localhost:5000
+Content-Length : 105
+
+Exception Details
+End of Central Directory record could not be found.

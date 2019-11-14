@@ -1,0 +1,23 @@
+ContextDetails
+
+User: ehowell
+Local IP: ::1
+Local Port: 5000
+Remote IP: ::1
+Remote Port: 57481
+Content Type: 
+URL: http://localhost:5000/
+
+Headers
+Connection : keep-alive
+Accept : text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding : gzip, deflate
+Accept-Language : en-US,en;q=0.5
+Cookie : .AspNetCore.Cookies=CfDJ8MiF0rTD6mRGgXDBYJJOZmIZeoGrTAF_vh6D8lxRWAihupm9iN3mUT8RGepcPZBc5U-1E2xZIZJnQgxv3D2ASqhg8mm-zjgwBXaAlSGJe9UglL5DeIIoPfLiarZbdtionjAqz_jg22bgD2kYKYcsG2suCqhvtJEFQX_IQEHQTlO7gqTe-vy_8xUWx-hosYo8hEdffIQ21fYaq-fW-vXFolZxVQxKgKBCCZfhuCwGNwfkJDmq8uCC0E927-4fNxDMk1EvASMcxY7YxrftlvMHT_CiXB7zr-7ik6PE_GX7R05lTszxdSrKjByw0jitzM8erohVMFrXOXKDRRWVP9YMrSQQRcYyDtpmRsSMk4t4Btq1GcYCD2suRm_h8G7g33dRmp8UZ4W1oYL_b8xCmi8fD3lfy_DFqBsW60XmDur1SvakHkY-kdvFOfTnXIwm54wGWNLmwLBtvFQFcTcNKZRxPvw
+Host : localhost:5000
+If-None-Match : W/"262-5Gl27TtmxGonDsjfIr74PCfUvvE"
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Upgrade-Insecure-Requests : 1
+
+Exception Details
+The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.

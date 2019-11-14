@@ -1,0 +1,316 @@
+{
+  "states": [
+    {
+      "fips": "01",
+      "name": "alabama",
+      "display": "Alabama",
+      "projection": "geoTransverseMercator().rotate([85 + 50 / 60, -30 - 30 / 60])"
+    },
+    {
+      "fips": "02",
+      "name": "alaska",
+      "display": "Alaska",
+      "projection": "geoTransverseMercator().rotate([142, -54])"
+    },
+    {
+      "fips": "04",
+      "name": "arizona",
+      "display": "Arizona",
+      "projection": "geoTransverseMercator().rotate([111 + 55 / 60, -31])"
+    },
+    {
+      "fips": "05",
+      "name": "arkansas",
+      "display": "Arkansas",
+      "projection": "geoConicConformal().parallels([34 + 56 / 60, 36 + 14 / 60]).rotate([92, 0])"
+    },
+    {
+      "fips": "06",
+      "name": "california",
+      "display": "California",
+      "projection": "geoConicEqualArea().parallels([34, 40.5]).rotate([120, 0])"
+    },
+    {
+      "fips": "08",
+      "name": "colorado",
+      "display": "Colorado",
+      "projection": "geoConicConformal().parallels([38 + 27 / 60, 39 + 45 / 60]).rotate([105 + 30 / 60, 0])"
+    },
+    {
+      "fips": "09",
+      "name": "connecticut",
+      "display": "Connecticut",
+      "projection": "geoConicConformal().parallels([41 + 12 / 60, 41 + 52 / 60]).rotate([72 + 45 / 60, 0])"
+    },
+    {
+      "fips": "10",
+      "name": "delaware",
+      "display": "Delware",
+      "projection": "geoTransverseMercator().rotate([75 + 25 / 60, -38])"
+    },
+    {
+      "fips": "11",
+      "name": "washington-dc",
+      "display": "Washington D.C.",
+      "projection": "geoConicConformal().rotate([77, 0]).center([0, 37.66]).parallels([38.3, 39.45])"
+    },
+    {
+      "fips": "12",
+      "name": "florida",
+      "display": "Florida",
+      "projection": "geoTransverseMercator().rotate([81, -24 - 20 / 60])"
+    },
+    {
+      "fips": "13",
+      "name": "georgia",
+      "display": "Georgia",
+      "projection": "geoTransverseMercator().rotate([82 + 10 / 60, -30])"
+    },
+    {
+      "fips": "15",
+      "name": "hawaii",
+      "display": "Hawaii",
+      "projection": "geoTransverseMercator().rotate([155 + 30 / 60, -18 - 50 / 60])"
+    },
+    {
+      "fips": "16",
+      "name": "idaho",
+      "display": "Idaho",
+      "projection": "geoTransverseMercator().rotate([144, -41 - 40 / 60])"
+    },
+    {
+      "fips": "17",
+      "name": "illinois",
+      "display": "Illinois",
+      "projection": "geoTransverseMercator().rotate([88 + 20 / 60, -36 - 40 / 60])"
+    },
+    {
+      "fips": "18",
+      "name": "indiana",
+      "display": "Indiana",
+      "projection": "geoTransverseMercator().rotate([85 + 40 / 60, -37 - 30 / 60])"
+    },
+    {
+      "fips": "19",
+      "name": "iowa",
+      "display": "Iowa",
+      "projection": "geoConicConformal().parallels([42 + 4 / 60, 43 + 16 / 60]).rotate([93 + 30 / 60, 0])"
+    },
+    {
+      "fips": "20",
+      "name": "kansas",
+      "display": "Kansas",
+      "projection": "geoConicConformal().parallels([38 + 43 / 60, 39 + 47 / 60]).rotate(98, 0])"
+    },
+    {
+      "fips": "21",
+      "name": "kentucky",
+      "display": "Kentucky",
+      "projection": "geoConicConformal().parallels([37 + 58 / 60, 38 + 58 / 60]).rotate([84 + 15 / 60, 0])"
+    },
+    {
+      "fips": "22",
+      "name": "louisiana",
+      "display": "Louisiana",
+      "projection": "geoConicConformal().parallels([31 + 10 / 60, 32 + 40 / 60]).rotate([92 + 30 / 60, 0])"
+    },
+    {
+      "fips": "23",
+      "name": "maine",
+      "display": "Maine",
+      "projection": "geoTransverseMercator().rotate([68 + 30 / 60, -43 - 40 / 60])"
+    },
+    {
+      "fips": "24",
+      "name": "maryland",
+      "display": "Maryland",
+      "projection": "geoConicConformal().parallels([38 + 18 / 60, 39 + 27 / 60]).rotate([77, 0])"
+    },
+    {
+      "fips": "25",
+      "name": "massachusetts",
+      "display": "Massachusetts",
+      "projection": "geoConicConformal().parallels([41 + 43 / 60, 42 + 41 / 60]).rotate([71 + 30 / 60, 0])"
+    },
+    {
+      "fips": "26",
+      "name": "michigan",
+      "display": "Michigan",
+      "projection": "geoConicConformal().parallels([44 + 11 / 60, 45 + 42 / 60]).rotate([84 + 22 / 60, 0])"
+    },
+    {
+      "fips": "27",
+      "name": "minnesota",
+      "display": "Minnesota",
+      "projection": "geoConicConformal().parallels([45 + 37 / 60, 47 + 3 / 60]).rotate([94 + 15 / 60, 0])"
+    },
+    {
+      "fips": "28",
+      "name": "mississippi",
+      "display": "Mississippi",
+      "projection": "geoTransverseMercator().rotate([88 + 50 / 60, -29 - 30 / 60])"
+    },
+    {
+      "fips": "29",
+      "name": "missouri",
+      "display": "Missouri",
+      "projection": "geoTransverseMercator().rotate([92 + 30 / 60, -35 - 50 / 60])"
+    },
+    {
+      "fips": "30",
+      "name": "montana",
+      "display": "Montana",
+      "projection": "geoConicConformal().parallels([45, 49]).rotate([109 + 30 / 60, 0])"
+    },
+    {
+      "fips": "31",
+      "name": "nebraska",
+      "display": "Nebraska",
+      "projection": "geoConicConformal().parallels([40, 43]).rotate([100, 0])"
+    },
+    {
+      "fips": "32",
+      "name": "nevada",
+      "display": "Nevada",
+      "projection": "geoTransverseMercator().rotate([116 + 40 / 60, -34 - 45 / 60])"
+    },
+    {
+      "fips": "33",
+      "name": "new-hampshire",
+      "display": "New Hampshire",
+      "projection": "geoTransverseMercator().rotate([71 + 40 / 60, -42 - 30 / 60])"
+    },
+    {
+      "fips": "34",
+      "name": "new-jersey",
+      "display": "New Jersey",
+      "projection": "geoTransverseMercator().rotate([74 + 30 / 60, -38 - 50 / 60])"
+    },
+    {
+      "fips": "35",
+      "name": "new-mexico",
+      "display": "New Mexico",
+      "projection": "geoTransverseMercator().rotate([106 + 15 / 60, -31])"
+    },
+    {
+      "fips": "36",
+      "name": "new-york",
+      "display": "New York",
+      "projection": "geoTransverseMercator().rotate([76 + 35 / 60, -40])"
+    },
+    {
+      "fips": "37",
+      "name": "north-carolina",
+      "display": "North Carolina",
+      "projection": "geoConicConformal().parallels([34 + 20 / 60, 36 + 10 / 60]).rotate([79, 0])"
+    },
+    {
+      "fips": "38",
+      "name": "north-dakota",
+      "display": "North Dakota",
+      "projection": "geoConicConformal().parallels([47 + 26 / 60, 48 + 44 / 60]).rotate([100 + 30 / 60, 0])"
+    },
+    {
+      "fips": "39",
+      "name": "ohio",
+      "display": "Ohio",
+      "projection": "geoConicConformal().parallels([40 + 26 / 60, 41 + 42 / 60]).rotate([82 + 30 / 60, 0])"
+    },
+    {
+      "fips": "40",
+      "name": "oklahoma",
+      "display": "Oklahoma",
+      "projection": "geoConicConformal().parallels([35 + 34 / 60, 36 + 46 / 60]).rotate([98, 0])"
+    },
+    {
+      "fips": "41",
+      "name": "oregon",
+      "display": "Oregon",
+      "projection": "geoConicConformal().parallels([44 + 20 / 60, 46]).rotate([120 + 30 / 60, 0])"
+    },
+    {
+      "fips": "42",
+      "name": "pennsylvania",
+      "display": "Pennsylvania",
+      "projection": "geoConicConformal().parallels([40 + 53 / 60, 41 + 57 / 60]).rotate([77 + 45 / 60, 0])"
+    },
+    {
+      "fips": "44",
+      "name": "rhode-island",
+      "display": "Rhode Island",
+      "projection": "geoTransverseMercator().rotate([71 + 30 / 60, -41 - 5 / 60])"
+    },
+    {
+      "fips": "45",
+      "name": "south-carolina",
+      "display": "South Carolina",
+      "projection": "geoConicConformal().parallels([32 + 30 / 60, 34 + 50 / 60]).rotate([81, 0])"
+    },
+    {
+      "fips": "46",
+      "name": "south-dakota",
+      "display": "South Dakota",
+      "projection": "geoConicConformal().parallels([44 + 25 / 60, 45 + 41 / 60]).rotate([100, 0])"
+    },
+    {
+      "fips": "47",
+      "name": "tennessee",
+      "display": "Tennessee",
+      "projection": "geoConicConformal().parallels([35 + 15 / 60, 36 + 25 / 60]).rotate([86, 0])"
+    },
+    {
+      "fips": "48",
+      "name": "texas",
+      "display": "Texas",
+      "projection": "geoConicConformal().parallels([30 + 7 / 60, 31 + 53 / 60]).rotate([100 + 20 / 60, 0])"
+    },
+    {
+      "fips": "49",
+      "name": "utah",
+      "display": "Utah",
+      "projection": "geoConicConformal().parallels([39 + 1 / 60, 40 + 39 / 60]).rotate([111 + 30 / 60, 0])"
+    },
+    {
+      "fips": "50",
+      "name": "vermont",
+      "display": "Vermont",
+      "projection": "geoTransverseMercator().rotate([72 + 30 / 60, -42 - 30 / 60])"
+    },
+    {
+      "fips": "51",
+      "name": "virginia",
+      "display": "Virginia",
+      "projection": "geoConicConformal().parallels([38 + 2 / 60, 39 + 12 / 60]).rotate([78 + 30 / 60, 0])"
+    },
+    {
+      "fips": "53",
+      "name": "washington",
+      "display": "Washington",
+      "projection": "geoConicConformal().parallels([47 + 30 / 60, 48 + 44 / 60]).rotate([120 + 50 / 60, 0])"
+    },
+    {
+      "fips": "54",
+      "name": "west-virginia",
+      "display": "West Virginia",
+      "projection": "geoConicConformal().parallels([39, 40 + 15 / 60]).rotate([79 + 30 / 60, 0])"
+    },
+    {
+      "fips": "55",
+      "name": "wisconsin",
+      "display": "Wisconsin",
+      "projection": "geoConicConformal().parallels([44 + 15 / 60, 45 + 30 / 60]).rotate([90, 0])"
+    },
+    {
+      "fips": "56",
+      "name": "wyoming",
+      "display": "Wyoming",
+      "projection": "geoTransverseMercator().rotate([107 + 20 / 60, -40 - 30 / 60])"
+    },
+    {
+      "fips": "72",
+      "name": "puerto-rico",
+      "display": "Puerto Rico",
+      "projection": "geoConicConformal().parallels([18 + 2 / 60, 18 + 26 / 60]).rotate([66 + 26 / 60, 0])"
+    }
+  ]
+}
