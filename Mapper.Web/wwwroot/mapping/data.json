@@ -70,13 +70,13 @@
       "fips": "15",
       "name": "hawaii",
       "display": "Hawaii",
-      "projection": "geoTransverseMercator().rotate([155 + 30 / 60, -18 - 50 / 60])"
+      "projection": "geoTransverseMercator().rotate([160 + 10 / 60, -21 - 40 / 60])"
     },
     {
       "fips": "16",
       "name": "idaho",
       "display": "Idaho",
-      "projection": "geoTransverseMercator().rotate([144, -41 - 40 / 60])"
+      "projection": "geoTransverseMercator().rotate([115 + 45 / 60, -41 - 40 / 60])"
     },
     {
       "fips": "17",
@@ -100,13 +100,13 @@
       "fips": "20",
       "name": "kansas",
       "display": "Kansas",
-      "projection": "geoConicConformal().parallels([38 + 43 / 60, 39 + 47 / 60]).rotate(98, 0])"
+      "projection": "geoConicConformal().parallels([37 + 16 / 60, 38 + 34 / 60]).rotate([98 + 30 / 60, 0])"
     },
     {
       "fips": "21",
       "name": "kentucky",
       "display": "Kentucky",
-      "projection": "geoConicConformal().parallels([37 + 58 / 60, 38 + 58 / 60]).rotate([84 + 15 / 60, 0])"
+      "projection": "geoConicConformal().parallels([36 + 44 / 60, 37 + 56 / 60]).rotate([85 + 45 / 60, 0])"
     },
     {
       "fips": "22",
@@ -280,7 +280,7 @@
       "fips": "51",
       "name": "virginia",
       "display": "Virginia",
-      "projection": "geoConicConformal().parallels([38 + 2 / 60, 39 + 12 / 60]).rotate([78 + 30 / 60, 0])"
+      "projection": "geoConicConformal().parallels([36 + 46 / 60, 37 + 58 / 60]).rotate([78 + 30 / 60, 0])"
     },
     {
       "fips": "53",
@@ -305,12 +305,6 @@
       "name": "wyoming",
       "display": "Wyoming",
       "projection": "geoTransverseMercator().rotate([107 + 20 / 60, -40 - 30 / 60])"
-    },
-    {
-      "fips": "72",
-      "name": "puerto-rico",
-      "display": "Puerto Rico",
-      "projection": "geoConicConformal().parallels([18 + 2 / 60, 18 + 26 / 60]).rotate([66 + 26 / 60, 0])"
     }
   ]
 }

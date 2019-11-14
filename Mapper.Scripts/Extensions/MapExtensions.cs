@@ -62,8 +62,7 @@ namespace Mapper.Scripts.Extensions
             new StateData { Fips = "53", Name = "washington", Display = "Washington" },
             new StateData { Fips = "54", Name = "west-virginia", Display = "West Virginia" },
             new StateData { Fips = "55", Name = "wisconsin", Display = "Wisconsin" },
-            new StateData { Fips = "56", Name = "wyoming", Display = "Wyoming" },
-            new StateData { Fips = "72", Name = "puerto-rico", Display = "Puerto Rico" }
+            new StateData { Fips = "56", Name = "wyoming", Display = "Wyoming" }
         };
 
         public static async Task<ConsoleOutput> CreateMap(this MapOptions options, IWebHostEnvironment env)
