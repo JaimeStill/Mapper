@@ -6,32 +6,36 @@ import {
 } from '@angular/core';
 
 import {
-  MatSelectChange,
-  MatSliderChange
-} from '@angular/material';
-
-import {
   MapOptions,
   SchemeData
 } from '../../models';
 
+import { MatSliderChange } from '@angular/material';
 import { MapService } from '../../services';
 import * as d3 from 'd3';
 
 @Component({
   selector: 'home',
-  templateUrl: './home.component.html',
+  templateUrl: 'home.component.html'
 })
 export class HomeComponent implements OnInit {
+  private features: d3.Selection<Element, {}, any, any>;
+  private state: d3.Selection<Element, {}, any, any>;
   private scale: d3.ScaleThreshold<number, string>;
+  private zoomed = () => this.features && this.features.attr('transform', d3.event.transform);
 
+  svg: d3.Selection<Element, {}, any, any>;
   creating = false;
-  scheme = { } as SchemeData;
+  scheme = {} as SchemeData;
 
   options = {
-    width: 960,
-    height: 960
+    width: 780,
+    height: 780
   } as MapOptions;
+
+  zoom = d3.zoom()
+    .scaleExtent([1, 10])
+    .on('zoom', this.zoomed);
 
   @ViewChild('map', { static: false }) map: ElementRef<HTMLDivElement>;
 
@@ -50,16 +54,23 @@ export class HomeComponent implements OnInit {
     this.scale = d3.scaleThreshold<number, string>()
       .domain([1, 10, 50, 200, 500, 1000, 2000, 4000])
       .range(this.scheme.scheme[9]);
+
+     this.state && this.colorMap();
   }
+
+  resetMap = () => this.svg.transition()
+    .duration(750)
+    .call(this.zoom.transform, d3.zoomIdentity);
 
   createMap = async () => {
     this.creating = true;
     const res = await this.mapper.createMap(this.options);
+
     if (res && !res.hasError) {
       this.clearMap();
       this.drawMap(JSON.parse(res.result));
     }
-    res && !res.hasError && console.log(JSON.parse(res.result));
+
     this.creating = false;
   }
 
@@ -67,14 +78,24 @@ export class HomeComponent implements OnInit {
     .select('svg')
     .remove();
 
-  drawMap = (data: any) => d3.select(this.map.nativeElement)
-    .append('svg')
-    .style('width', `${this.options.width}px`)
-    .style('height', `${this.options.height}px`)
-    .selectAll('path')
-    .data(data.features)
-    .enter()
-    .append('path')
-    .attr('d', d3.geoPath())
+  drawMap = (data: any) => {
+    this.svg = d3.select(this.map.nativeElement)
+      .append('svg')
+      .style('width', `${this.options.width}px`)
+      .style('height', `${this.options.height}px`);
+
+    this.features = this.svg.append('g');
+
+    this.state = this.features.selectAll('path')
+      .data(data.features)
+      .enter()
+      .append('path')
+      .attr('d', d3.geoPath());
+
+    this.colorMap();
+    this.svg.call(this.zoom);
+  }
+
+  colorMap = () => this.state
     .style('fill', (d: any) => this.scale(d.properties.density));
 }

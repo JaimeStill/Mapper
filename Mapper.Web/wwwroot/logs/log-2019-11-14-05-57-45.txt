@@ -1,0 +1,24 @@
+ContextDetails
+
+User: 
+Local IP: ::1
+Local Port: 5000
+Remote IP: ::1
+Remote Port: 53455
+Content Type: application/json
+URL: http://localhost:5000/api/map/createMap
+
+Headers
+Connection : keep-alive
+Content-Type : application/json
+Accept : application/json, text/plain, */*
+Accept-Encoding : gzip, deflate
+Accept-Language : en-US,en;q=0.5
+Host : localhost:5000
+Referer : http://localhost:5000/home
+User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Origin : http://localhost:5000
+Content-Length : 108
+
+Exception Details
+Could not find a part of the path 'E:\Jaime\Desktop\Work\Projects\Mapper\Mapper.Web\wwwroot\mapping\maps\36c251f2-d423-47f2-89f8-79a67a267ae1\cb_2014_12_tract_500k.zip'.

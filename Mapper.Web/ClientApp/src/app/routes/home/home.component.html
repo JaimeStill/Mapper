@@ -3,23 +3,15 @@
                     color="accent"></mat-progress-bar>
 </ng-template>
 <mat-progress-bar *ngIf="creating"
-                  mode="indeterminate"
-                  color="warn"></mat-progress-bar>
+                  mode="indeterminate" color="warn"></mat-progress-bar>
 <ng-container *ngIf="mapper.schemes$ | async as schemes else loading">
   <ng-container *ngIf="mapper.states$ | async as states else loading">
-    <section fxLayout="column"
-             fxLayoutAlign="start stretch"
-             class="container">
-      <section fxLayout="row | wrap"
-               fxLayoutAlign="start stretch">
-        <mat-form-field fxFlex>
-          <mat-label>State</mat-label>
-          <mat-select [(ngModel)]="options.data">
-            <mat-option *ngFor="let s of states"
-                        [value]="s">{{s.option}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field fxFlex>
+    <section fxLayout="row | wrap"
+             fxLayoutAlign="start stretch">
+      <section fxLayout="column"
+               fxLayoutAlign="start stretch"
+               class="background stacked container">
+        <mat-form-field>
           <mat-label>Scheme</mat-label>
           <mat-select [(ngModel)]="scheme"
                       (selectionChange)="setScale()">
@@ -27,48 +19,46 @@
                         [value]="s">{{s.name}}</mat-option>
           </mat-select>
         </mat-form-field>
+        <mat-form-field>
+          <mat-label>State</mat-label>
+          <mat-select [(ngModel)]="options.data">
+            <mat-option *ngFor="let s of states"
+                        [value]="s">{{s.option}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p class="mat-body-strong">Width: {{options.width}}</p>
+        <mat-slider [value]="options.width"
+                    [min]="480"
+                    [max]="960"
+                    [thumbLabel]="true"
+                    [step]="20"
+                    [tickInterval]="1"
+                    (input)="updateWidth($event)"></mat-slider>
+        <p class="mat-body-strong">Height: {{options.height}}</p>
+        <mat-slider [value]="options.height"
+                    [min]="480"
+                    [max]="960"
+                    [thumbLabel]="true"
+                    [step]="20"
+                    [tickInterval]="1"
+                    (input)="updateHeight($event)"></mat-slider>
+        <button mat-stroked-button
+                color="primary"
+                [disabled]="!options.width || !options.height || !options.data || !scheme || creating"
+                [style.margin.px]="8"
+                (click)="createMap()">Create Map</button>
+        <button mat-stroked-button
+                [disabled]="!options.data || creating"
+                *ngIf="svg"
+                [style.margin.px]="8"
+                (click)="resetMap()">Reset Map</button>
       </section>
-      <section fxLayout="row | wrap"
-               fxLayoutAlign="start stretch">
-        <section fxLayout="column"
-                 fxLayoutAlign="start stretch"
-                 fxFlex>
-          <p>Width</p>
-          <p class="mat-body-strong"
-             fxFlexAlign="center">{{options.width}}</p>
-          <mat-slider [value]="options.width"
-                      [min]="480"
-                      [max]="960"
-                      [thumbLabel]="true"
-                      [step]="20"
-                      [tickInterval]="1"
-                      (input)="updateWidth($event)"></mat-slider>
-        </section>
-        <section fxLayout="column"
-                 fxLayoutAlign="start stretch"
-                 fxFlex>
-          <p>Height</p>
-          <p class="mat-body-strong"
-             fxFlexAlign="center">{{options.height}}</p>
-          <mat-slider [value]="options.height"
-                      [min]="480"
-                      [max]="960"
-                      [thumbLabel]="true"
-                      [step]="20"
-                      [tickInterval]="1"
-                      (input)="updateHeight($event)"></mat-slider>
-        </section>
+      <section fxLayout="column"
+               fxLayoutAlign="center center"
+               fxFlex>
+        <div #map
+             fxFlexAlign="center"></div>
       </section>
-      <button mat-stroked-button
-              color="primary"
-              [disabled]="!options.width || !options.height || !options.data || !scheme || creating"
-              (click)="createMap()"
-              fxFlexAlign="start"
-              [style.margin.px]="8">Create Map</button>
-    </section>
-    <section fxLayout="column"
-             fxLayoutAlign="center center">
-      <div #map></div>
     </section>
   </ng-container>
 </ng-container>

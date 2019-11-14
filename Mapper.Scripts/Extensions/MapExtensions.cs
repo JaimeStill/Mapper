@@ -70,7 +70,7 @@ namespace Mapper.Scripts.Extensions
         {
             var guid = Guid.NewGuid();
             options.Path = $"{env.ContentRootPath}/wwwroot/mapping/";
-            options.OutPath = $"{env.ContentRootPath}/wwwroot/mapping/data/{guid.ToString()}/";
+            options.OutPath = $"{env.ContentRootPath}/wwwroot/mapping/{guid.ToString()}/";
             options.UnzipMap();
 
             var result = await options.CreateMap();
@@ -126,7 +126,7 @@ namespace Mapper.Scripts.Extensions
         static void UnzipMap(this MapOptions options)
         {
             var shape = $"cb_2014_{options.Data.Fips}_tract_500k";
-            ZipFile.ExtractToDirectory($"{options.Path}maps/{shape}.zip", $"{options.Path}maps/{shape}");
+            ZipFile.ExtractToDirectory($"{options.Path}maps/{shape}.zip", $"{options.OutPath}{shape}");
         }
     }
 }

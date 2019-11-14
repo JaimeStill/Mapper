@@ -15,13 +15,13 @@ Param(
 $shape = "cb_2014_$($fips)_tract_500k"
 $census = "cb_2014_$($fips)_tract_DP02_0001E"
 
-if (Test-Path -Path "$($path)maps/$($shape)" -PathType Container) {
+if (Test-Path -Path "$($outPath)$($shape)" -PathType Container) {
     if (Test-Path -Path "$($path)census/$($census).json" -PathType Leaf) {
         if (!(Test-Path "$($path)temp" -PathType Container)) {
             New-Item -Path $path -Name "temp" -ItemType "directory" -Force | Out-Null
         }
 
-        if (!(Test-Path -Path "$outPath" -PathType Container)) {
+        if (!(Test-Path -Path $outPath -PathType Container)) {
             New-Item -Path $outPath -ItemType "directory" -Force | Out-Null
         }
 
@@ -32,7 +32,7 @@ if (Test-Path -Path "$($path)maps/$($shape)" -PathType Container) {
             Exit
         }
 
-        shp2json "$($path)maps/$($shape)/$($shape).shp" | `
+        shp2json "$($outPath)$($shape)/$($shape).shp" | `
             geoproject "d3.$($state.projection).fitSize([$width, $height], d)" | `
             ndjson-split "d.features" | `
             ndjson-map "d.id = d.properties.GEOID.slice(2), d" > `
@@ -53,7 +53,7 @@ if (Test-Path -Path "$($path)maps/$($shape)" -PathType Container) {
             topo2geo tracts=- > `
             "$($outPath)$($state.name).json"
 
-        Remove-Item "$($path)maps/$($shape)" -Force -Recurse
+        Remove-Item "$($outPath)$($shape)" -Force -Recurse
         Remove-Item "$($path)temp" -Force -Recurse
     } else {
         Write-Error "$($fips) does not have associated census data"

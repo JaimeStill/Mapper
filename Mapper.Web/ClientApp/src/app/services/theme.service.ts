@@ -26,7 +26,7 @@ export class ThemeService {
     { name: 'dark-teal', display: 'Dark Teal' }
   ]);
 
-  private theme = new BehaviorSubject<Theme>(this.themes.value[0]);
+  private theme = new BehaviorSubject<Theme>(this.themes.value[1]);
 
   themes$ = this.themes.asObservable();
   theme$ = this.theme.asObservable();
